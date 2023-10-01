@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_op"
+        style="@android:style/Widget.EditText"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/tv_res"
+        android:layout_width="369dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="40dp"
+        android:focusable="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_op"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,TextSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_left"
+        android:layout_width="157dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_op"
+        app:layout_constraintEnd_toStartOf="@+id/tv_op"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_right"
+        android:layout_width="157dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_op"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_op"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="7"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/b8"
+        app:layout_constraintTop_toTopOf="@+id/b8"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="8"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="9"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/b5"
+        app:layout_constraintTop_toTopOf="@+id/b5"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="5"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/b8"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="6"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/b9"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="1"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/b2"
+        app:layout_constraintTop_toTopOf="@+id/b2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="2"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/b5"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="3"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/b6"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/b2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_res"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="="
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/b3"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_div"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="/"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/b9"
+        app:layout_constraintTop_toTopOf="@+id/b9"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_mul"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="*"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/b6"
+        app:layout_constraintTop_toTopOf="@+id/b6"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_dif"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/b3"
+        app:layout_constraintTop_toTopOf="@+id/b3"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_plus"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/b_res"
+        app:layout_constraintTop_toTopOf="@+id/b_res"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_fr"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:minWidth="48dip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="."
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/b0"
+        app:layout_constraintTop_toTopOf="@+id/b0"
+        tools:ignore="HardcodedText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="267dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
