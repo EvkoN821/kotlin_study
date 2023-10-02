@@ -72,26 +72,33 @@ class MainActivity : AppCompatActivity() {
 
         val cl = View.OnClickListener {
             edtLeft.setError(null); edtRight.setError(null)
-            if (edtOp.text.isBlank())
+            if (edtOp.text.isBlank()) {
+                edtLeft.requestFocus()
                 edtLeft.setText("${edtLeft.text.toString()}${(it as Button).text}")
-            else
+            }
+            else {
+                edtRight.requestFocus()
                 edtRight.setText("${edtRight.text.toString()}${(it as Button).text}")
+            }
             edtRes.setText("")
         }
 
 
         val cl_op = View.OnClickListener {
+            edtRight.requestFocus()
             edtOp.setError(null)
-            if (edtOp.text.toString() != "") {
+            if (!edtOp.text.isBlank() and !edtRight.text.isBlank() and !edtLeft.text.isBlank()) {
                 calculate()
                 if (flag_error != "!") {
                     edtLeft.setError(null)
                     edtLeft.setText(res)
+                    edtRight.requestFocus()
                 }
             }
             edtOp.setText("${(it as Button).text}")
             if (edtLeft.text.toString() == "") {
                 edtLeft.setText(res)
+                edtRight.requestFocus()
                 edtLeft.setError(null)
             }
             edtRes.setText("")
@@ -102,6 +109,7 @@ class MainActivity : AppCompatActivity() {
             if (flag_error != "!") {
                 edtRes.setText(res)
                 edtLeft.setText("")
+                edtLeft.requestFocus()
             }
         }
 
