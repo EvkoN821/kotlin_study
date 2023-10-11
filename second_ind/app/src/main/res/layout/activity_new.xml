@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="139dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:text="владелец"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/edt4"
+        app:layout_constraintTop_toTopOf="@+id/edt4" />
+
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt3" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="139dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:text="модель"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/edt2"
+        app:layout_constraintTop_toTopOf="@+id/edt2" />
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt2" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="139dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:text="производитель"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/edt1"
+        app:layout_constraintTop_toTopOf="@+id/edt1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="139dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:text="номер"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/edt3"
+        app:layout_constraintTop_toTopOf="@+id/edt3" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="328dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="100dp"
+        android:text="Сохранить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
